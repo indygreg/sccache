@@ -58,7 +58,7 @@ percent-encoding = { version = "2", optional = true }
 rand = "0.7"
 redis = { version = "0.18", optional = true, features = ["aio", "tokio-comp"] }
 regex = "1"
-reqwest = { version = "0.9.11", optional = true }
+reqwest = { version = "0.9.11", optional = true, default-features= false, features = ["rustls-tls"] }
 retry = "1"
 ring = { version = "0.16", optional = true, features = ["std"] }
 sha-1 = { version = "0.9", optional = true }
@@ -105,7 +105,7 @@ cc = "1.0"
 chrono = "0.4"
 itertools = "0.9"
 predicates = "1"
-selenium-rs = "0.1"
+#selenium-rs = "0.1"
 
 [target.'cfg(unix)'.dependencies]
 daemonize = "0.4"
